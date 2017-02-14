@@ -34,11 +34,9 @@ set(TEST_FILES
         test/test.cc 
 	)
 
-set( CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib )
 
 add_executable(app ${SOURCE_FILE} ${MAIN_HEADER_FILES})
-add_executable(runAllTests ${TEST_FILES} ${MAIN_HEADER_FILES})
-link_directories(lib)
+#add_executable(runAllTests ${TEST_FILES} ${MAIN_HEADER_FILES})
 target_link_libraries(app ${CMAKE_CURRENT_SOURCE_DIR}/lib/libhiredis.a)
 
 # Options. Turn on with 'cmake -Dmyvarname=ON'.
