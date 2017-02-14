@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int not_main()
+int main()
 {
 	cout << "Hello World!";
 	return 0;

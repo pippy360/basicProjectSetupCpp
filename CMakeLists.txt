@@ -36,7 +36,7 @@ set(TEST_FILES
 
 
 add_executable(app ${SOURCE_FILE} ${MAIN_HEADER_FILES})
-#add_executable(runAllTests ${TEST_FILES} ${MAIN_HEADER_FILES})
+add_executable(runAllTests ${TEST_FILES} ${MAIN_HEADER_FILES})
 target_link_libraries(app ${CMAKE_CURRENT_SOURCE_DIR}/lib/libhiredis.a)
 
 # Options. Turn on with 'cmake -Dmyvarname=ON'.
